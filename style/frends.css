@@ -1,0 +1,423 @@
+/* Запрещаем выделение текста для всего документа */
+body {
+  user-select: none; /* Запрещаем выделение текста */
+  overflow: hidden; /* Отключаем прокрутку */
+  margin: 0; /* Убираем отступы по умолчанию */
+}
+
+/* Запрещаем выделение текста для всех элементов внутри */
+* {
+  -webkit-user-select: none; /* Запрещаем выделение текста в браузерах на основе WebKit */
+  -moz-user-select: none; /* Запрещаем выделение текста в Firefox */
+  -ms-user-select: none; /* Запрещаем выделение текста в Internet Explorer/Edge */
+  user-select: none; /* Запрещаем выделение текста в остальных браузерах */
+}
+html {
+  overflow: hidden; /* Отключаем прокрутку */
+  height: 100%; /* Устанавливаем высоту в 100% для предотвращения прокрутки */
+}
+
+.betatxt {
+  color: #1A1A1A;
+}
+.palka {
+  color: #1A1A1A;
+}
+.scam2 {
+  color: var(--color-mediumseagreen);
+}
+.uptext1,
+.zadniifon3 {
+  align-self: stretch; /* Заставляет элемент растянуться на всю доступную ширину родительского контейнера */
+  position: relative;
+}
+.scam3{
+  color: var(--color-mediumseagreen);
+}
+.texttopscammers1 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 450px;
+  z-index: 1;
+  font-size: 36px;
+}
+.texttopscammers-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 59px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.svgfrends-icon {
+  height: 155px;
+  width: 128px;
+  position: relative;
+  z-index: 1;
+}
+.svgfrends-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 17px;
+}
+.kolvofrendstext,
+.textfrends {
+  height: 44px;
+  position: relative;
+  display: flex;
+  align-items: flex-start; /* Начало элемента по вертикали */
+  justify-content: flex-start; /* Начало элемента по горизонтали */
+  z-index: 1;
+}
+
+.kolvofrendstext {
+  min-width: 35px;
+}
+
+.textfrends {
+  flex: 1;
+  text-align: left; /* Текст выравнивается по левому краю */
+}
+
+.kolvofrendstext-parent {
+  width: 159px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.avafrends {
+  align-self: stretch;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+}
+.usernamefrends {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  white-space: nowrap; /* Предотвращает перенос текста на следующую строку */
+  overflow: hidden;    /* Скрывает часть текста, выходящую за пределы блока */
+  text-overflow: ellipsis; /* Добавляет многоточие в конце обрезанного текста */
+}
+.avafrends-parent,
+.usernamefrends-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+.usernamefrends-wrapper {
+  width: 220px; /* Ширина родительского элемента */
+  display: flex;
+  align-items: center; /* Центрирование содержимого по высоте */
+  overflow: hidden; /* Скрывает любые выходящие за пределы элементы */
+  text-overflow: ellipsis; /* Добавляет многоточие, если текст внутри выходит за пределы блока */
+}
+
+
+.avafrends-parent {
+  height: 50px;
+  flex-direction: row;
+  gap: 10px;
+}
+.kolvoscamszafrends {
+  left: -10px;
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  font-size: 16px;
+  text-align: right; /* Выравнивание текста по правому краю */
+}
+.valutafrends {
+  flex: 1;
+  position: relaative;
+  display: inline-block;
+  color: var(--color-mediumseagreen);
+  font-size: 16px;
+  text-align: right; /* Выравнивание текста по правому краю */
+}
+
+.kolvoscamszafrends-parent,
+.yourfrends-inner {
+  display: flex;
+  align-items: center; /* Выравнивание по центру по высоте */
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.kolvoscamszafrends-parent {
+  display: flex;
+  align-items: center; /* Выравнивание по центру по высоте */
+  justify-content: flex-start;
+  height: 100%;
+}
+.yourfrends-inner {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.yourfrends {
+  align-self: stretch;
+  display: flex;
+  flex-shrink: 0;
+}
+.yourfrends {
+  display: flex;
+  align-items: center; /* Выравнивание по центру по высоте */
+  justify-content: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+
+.yourfrends-group > * {
+  margin-bottom: 15px; /* Для отступов между вертикально расположенными элементами */
+}
+
+/* Убираем последний отступ, чтобы не было лишнего места */
+.yourfrends-group > *:last-child {
+  margin-bottom: 0;
+}
+.yourfrends-group{
+  margin-left: 5px;
+  justify-content: center;
+  justify-items: center;
+  width: 400px;
+}
+
+.yourfrendsall {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 100px;
+}
+.yourfrendsall {
+  width: 450px;
+  align-self: stretch;
+  height: 700px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 0 0 var(--padding-24xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  z-index: 1;
+  font-size: var(--font-size-5xl);
+  padding-right: -30px; /* Оставляем небольшой отступ для визуального смещения */
+}
+/* Кастомизация скроллбара */
+.yourfrendsall::-webkit-scrollbar {
+  width: 3px; /* Ширина скроллбара */
+  background-color: transparent; /* Сделать фон скроллбара прозрачным */
+}
+/* Стиль скролл-индикатора */
+.yourfrendsall::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a; /* Цвет ползунка скроллбара */
+  border-radius: 8px; /* Закругление краев ползунка */
+}
+.yourfrendsall::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Цвет ползунка при наведении */
+}
+.frame-parent2,
+.frame-wrapper3 {
+  padding-top: 10px;
+  justify-content: center; /* Центрирует элементы внутри контейнера по горизонтали */
+  align-items: center; /* Центрирует элементы внутри контейнера по вертикали */
+  max-width: 450px;
+}
+.frame-parent2 {
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+}
+.frame-wrapper3 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.homebuttonimage-icon2 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+.homebuttonimage-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-41xl);
+}
+.hometext {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+}
+.homebutton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  min-width: 112px;
+}
+.button-leader {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  min-width: 112px;
+}
+.frendsbuttonimage-icon2 {
+  height: 30px;
+  width: 40px;
+  position: relative;
+}
+.frendsbuttonimage-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-36xl);
+}
+.frendsbutton2 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+  min-width: 112px;
+  color: var(--color-white);
+}
+.frendsbutton2,
+.mainbuttons2,
+.newscamfrendsframe,
+.zadniifon-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mainbuttons1 {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  z-index: 1;
+  font-size: var(--font-size-lg-3);
+  color: var(--color-gray-200);
+}
+.newscamfrendsframe,
+.zadniifon-container {
+  background-color: var(--color-black);
+  max-width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: var(--font-montserrat);
+}
+.zadniifon-container {
+  position: absolute;
+  align-self: stretch;
+  border-radius: 16px 16px 0 0;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+}
+.mainbuttons1,
+.newscamfrendsframe {
+  position: fixed;
+}
+
+.bigbutton {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  position: relative;
+  height: 50px;
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  transform-origin: center center; /* Устанавливаем точку масштабирования по центру */
+}
+
+.mainbuttons1 {
+  position: fixed; /* Используем fixed для фиксированного положения */
+  height: 100px;
+  background-color: black;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  bottom: 0; /* Отступ от нижнего края экрана */
+  left: 50%; /* Центрирование контейнера по горизонтали */
+  transform: translateX(-50%); /* Корректировка для полного центрирования */
+  z-index: 1;
+  font-size: var(--font-size-lg-3);
+  color: var(--color-gray-200);
+}
+
+#backBigButton {
+  position: fixed; /* Используем fixed для фиксированного положения */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 80px; /* Отступ от нижнего края экрана */
+  height: 70px;
+  width: 450px;
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  z-index: 2; /* Порядок отображения */
+}
+
+
+.back-bigbutton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 80px; /* Расстояние от нижнего края экрана */
+  height: 70px;
+  width: 450px;
+  left: 50%;
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  z-index: 2; /* Порядок отображения */
+}
+
+
+
+.main{
+  position: absolute;
+  width: 450px;
+}
+
+.newscamfrendsframe {
+  align-items: center; /* Центрирование по горизонтали */
+  width: 100%;
+  height: 100vh; /* Высота 100% от высоты экрана */
+  position: relative;
+  background: black;
+  background-size: cover; /* Фон покрывает всю область элемента */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl) var(--padding-11xl) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-21xl);
+  line-height: normal;
+  letter-spacing: normal;
+}

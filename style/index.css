@@ -1,0 +1,617 @@
+/* Запрещаем выделение текста для всего документа */
+body {
+  user-select: none; /* Запрещаем выделение текста */
+  overflow: hidden; /* Отключаем прокрутку */
+  margin: 0; /* Убираем отступы по умолчанию */
+}
+
+/* Запрещаем выделение текста для всех элементов внутри */
+* {
+  -webkit-user-select: none; /* Запрещаем выделение текста в браузерах на основе WebKit */
+  -moz-user-select: none; /* Запрещаем выделение текста в Firefox */
+  -ms-user-select: none; /* Запрещаем выделение текста в Internet Explorer/Edge */
+  user-select: none; /* Запрещаем выделение текста в остальных браузерах */
+}
+html {
+  overflow: hidden; /* Отключаем прокрутку */
+  height: 100%; /* Устанавливаем высоту в 100% для предотвращения прокрутки */
+}
+.betatxt {
+  color: #1A1A1A;
+  font-family: 'Montserrat', bold;
+}
+.palka {
+  color: #1A1A1A;
+  font-family: 'Montserrat', bold;
+}
+.scam2 {
+  color: var(--color-mediumseagreen);
+  font-family: 'Montserrat', bold;
+}
+.uptext1,
+.zadniifon3 {
+  align-self: stretch; /* Заставляет элемент растянуться на всю доступную ширину родительского контейнера */
+  position: relative;
+}
+.uptext1 {
+  display: flex; /* Делает контейнер flex-контейнером */
+  justify-content: center; /* Центрирует содержимое по горизонтали */
+  align-items: center; /* Центрирует содержимое по вертикали */
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+  font-family: 'Montserrat', bold;
+}
+.uptext1{
+  margin-top: -60px;
+
+}
+.zadniifon1 {
+  height: 700px;
+  border-radius: 18.33px 18.33px 0 0;
+  background-color: var(--color-black);
+  border-top: 1px solid var(--color-mediumseagreen);
+  box-sizing: border-box;
+  display: none;
+}
+.connectwalletbackbutton {
+  height: 40px;
+  width: 200px;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--color-gray-200);
+  display: none;
+}
+.connect-wallet {
+  height: 40px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.avauser,
+.walletbutton {
+  align-self: stretch;
+  z-index: 1;
+}
+.walletbutton {
+  border-radius: var(--br-base);
+  background-color: var(--color-gray-200);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.avauser {
+  flex: 1;
+  position: relative;
+  border-radius: 100%;
+  background-color: var(--color-gainsboro);
+  width: 200px;
+  height: 200px;
+}
+.avauser-wrapper {
+  flex-direction: row;
+
+}
+.avauser-wrapper,
+.frame-container,
+.walletbutton-parent {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.walletbutton-parent {
+  flex-direction: column;
+}
+.frame-container {
+  flex-direction: row;
+  padding: 0 var(--padding-8xs);
+}
+.kolvoscams,
+.valutauser {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.kolvoscams {
+  flex: 1;
+  display: inline-block;
+  text-align: center;
+}
+.valutauser {
+  margin: 0;
+  width: 90.4px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--color-mediumseagreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90.4px;
+}
+.scam-info {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+  font-size: var(--font-size-5xl);
+  justify-content: space-around;
+}
+.frame-parent,
+.frame-wrapper,
+.scam-info {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.frame-parent {
+  width: 210px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 35px;
+}
+.frame-wrapper {
+  margin-top: 30px;
+  height: 275px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 26px;
+  box-sizing: border-box;
+}
+.tasks {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 70px;
+  z-index: 1;
+}
+.prizzazadanie,
+.task-description,
+.tasks {
+  position: relative;
+}
+b.task-description {
+  width: 300px;
+  font-size: 16px;
+}
+.prizzazadanie {
+  display: inline-block;
+  min-width: 88px;
+}
+.valuta {
+  flex: 1;
+  position: relative;
+  color: var(--color-mediumseagreen);
+}
+.prizzazadanie-parent,
+.task-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.prizzazadanie-parent {
+  width: 17px;
+  flex-direction: row;
+}
+.task-content {
+  flex: 1;
+  flex-direction: column;
+  gap: 18px;
+  width: 150px;
+}
+.backtextopen,
+.textopen {
+  height: 30px;
+  position: relative;
+}
+.backtextopen {
+  box-shadow: 0 0 32px rgba(200, 210, 220, 0.2);
+  border-radius: var(--br-81xl);
+  background-color: var(--color-whitesmoke);
+  display: none;
+}
+.textopen {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.buttonopen,
+.buttonopen-wrapper {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+.buttonopen {
+  align-self: stretch;
+  box-shadow: 0 0 32px rgba(200, 210, 220, 0.2);
+  border-radius: var(--br-81xl);
+  background-color: var(--color-whitesmoke);
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+}
+.buttonopen-wrapper {
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  width: 60px;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  text-decoration: none;
+}
+.obvodkazadaniya,
+.polnoezadanie {
+  border-radius: 16px;
+  border: 2px solid var(--color-gray-200);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.obvodkazadaniya {
+  height: 80px;
+  width: 380px;
+  position: relative;
+  display: none;
+}
+.polnoezadanie {
+  /* height: 80px; */ /* Удаляем фиксированную высоту */
+  min-height: 80px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-4xs);
+  flex-shrink: 0;
+  row-gap: 20px;
+  z-index: 2;
+}
+
+.prizzazadanie2 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.prizzazadanie-container {
+  width: 176px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.polnoezadanie2,
+.textzadaniya2 {
+  align-self: stretch;
+  flex-shrink: 0;
+}
+.polnoezadanie2 {
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-4xs);
+  max-width: 100%;
+  row-gap: 20px;
+  z-index: 1;
+}
+.textzadaniya2 {
+  position: relative;
+}
+.prizzazadanie-parent1,
+.textzadaniya-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.prizzazadanie-parent1 {
+  width: 176px;
+  height: 20px;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.textzadaniya-container {
+  height: 22px;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 0 2px;
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  min-width: 195px;
+}
+.polnoezadanie3,
+.zadaniya {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.polnoezadanie3 {
+  border: 1px solid var(--color-gray-200);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-4xs) var(--padding-4xl);
+  max-width: 100%;
+  row-gap: 20px;
+  z-index: 2;
+}
+.zadaniya {
+  margin-top: 50px;
+  position: absolute;
+  height: 200px;
+  width: 388px;
+  overflow-y: auto;
+  flex-direction: column;
+  padding: 0 0 var(--padding-4xl);
+  gap: var(--gap-3xs);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-base);
+  padding-right: calc(2px + 3px); /* Добавляем ширину скроллбара */
+}
+
+
+
+/* Кастомизация скроллбара */
+.zadaniya::-webkit-scrollbar {
+  width: 3px; /* Ширина скроллбара */
+  background-color: transparent; /* Сделать фон скроллбара прозрачным */
+}
+/* Стиль скролл-индикатора */
+.zadaniya::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a; /* Цвет ползунка скроллбара */
+  border-radius: 8px; /* Закругление краев ползунка */
+}
+.zadaniya::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Цвет ползунка при наведении */
+}
+.tasks-container,
+.tasks-container-wrapper,
+.zadaniya {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.tasks-container {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+.tasks-container-wrapper {
+  width: 450px;
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-16xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-5xl);
+}
+.frame-parent2,
+.frame-wrapper3 {
+  padding-top: 10px;
+  justify-content: center; /* Центрирует элементы внутри контейнера по горизонтали */
+  align-items: center; /* Центрирует элементы внутри контейнера по вертикали */
+  max-width: 450px;
+}
+.frame-parent2 {
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+}
+.frame-wrapper3 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.homebuttonimage-icon2 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+.homebuttonimage-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-41xl);
+}
+.hometext {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  display: flex; /* Добавлено для использования flexbox */
+  justify-content: center; /* Центрирование по горизонтали */
+  text-align: center; /* Центрирование текста по горизонтали */
+}
+.hometext {
+  font-family: 'Montserrat', bold;
+}
+
+.homebutton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  min-width: 112px;
+  color: white;
+}
+.button-leader {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  min-width: 112px;
+}
+.frendsbuttonimage-icon2 {
+  height: 30px;
+  width: 40px;
+  position: relative;
+}
+.frendsbuttonimage-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-36xl);
+}
+.frendsbutton2 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+  min-width: 112px;
+}
+.frendsbutton2,
+.mainbuttons2,
+.newscamfrendsframe,
+.zadniifon-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mainbuttons1 {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  z-index: 1;
+  font-size: var(--font-size-lg-3);
+  color: var(--color-gray-200);
+}
+.newscamfrendsframe,
+.zadniifon-parent {
+  background-color: var(--color-black);
+  max-width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: var(--font-montserrat);
+}
+.zadniifon-parent {
+  position: absolute;
+  align-self: stretch;
+  border-radius: 16px 16px 0 0;
+  border-top: 1px solid #21D589; /* Зелёная граница сверху */
+  gap: var(--gap-xl);
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+}
+
+.mainbuttons1,
+.newscamfrendsframe {
+  position: fixed;
+}
+
+.bigbutton {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  position: relative;
+  height: 50px;
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  transform-origin: center center; /* Устанавливаем точку масштабирования по центру */
+}
+
+.mainbuttons1 {
+  position: fixed; /* Используем fixed для фиксированного положения */
+  height: 100px;
+  background-color: black;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  bottom: 0; /* Отступ от нижнего края экрана */
+  left: 50%; /* Центрирование контейнера по горизонтали */
+  transform: translateX(-50%); /* Корректировка для полного центрирования */
+  z-index: 1;
+  font-size: var(--font-size-lg-3);
+  color: var(--color-gray-200);
+}
+
+#backBigButton {
+  position: fixed; /* Используем fixed для фиксированного положения */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 80px; /* Отступ от нижнего края экрана */
+  height: 70px;
+  width: 450px;
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  z-index: 2; /* Порядок отображения */
+}
+
+
+.back-bigbutton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 80px; /* Расстояние от нижнего края экрана */
+  height: 70px;
+  width: 450px;
+  left: 50%;
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  z-index: 2; /* Порядок отображения */
+}
+
+
+
+.main{
+  position: absolute;
+  width: 450px;
+}
+
+.root1 {
+  align-items: center; /* Центрирование по горизонтали */
+  width: 100%;
+  height: 100vh; /* Высота 100% от высоты экрана */
+  position: relative;
+  background: black;
+  background-size: cover; /* Фон покрывает всю область элемента */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl) var(--padding-11xl) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-21xl);
+  line-height: normal;
+  letter-spacing: normal;
+}

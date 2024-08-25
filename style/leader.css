@@ -1,0 +1,541 @@
+/* Запрещаем выделение текста для всего документа */
+body {
+  user-select: none; /* Запрещаем выделение текста */
+  overflow: hidden; /* Отключаем прокрутку */
+  margin: 0; /* Убираем отступы по умолчанию */
+}
+
+/* Запрещаем выделение текста для всех элементов внутри */
+* {
+  -webkit-user-select: none; /* Запрещаем выделение текста в браузерах на основе WebKit */
+  -moz-user-select: none; /* Запрещаем выделение текста в Firefox */
+  -ms-user-select: none; /* Запрещаем выделение текста в Internet Explorer/Edge */
+  user-select: none; /* Запрещаем выделение текста в остальных браузерах */
+}
+html {
+  overflow: hidden; /* Отключаем прокрутку */
+  height: 100%; /* Устанавливаем высоту в 100% для предотвращения прокрутки */
+}
+.betatxt {
+  color: #1A1A1A;
+  font-family: 'Montserrat', bold;
+}
+.palka {
+  color: #1A1A1A;
+  font-family: 'Montserrat', bold;
+}
+.scam2 {
+  color: var(--color-mediumseagreen);
+  font-family: 'Montserrat', bold;
+}
+.uptext1,
+.zadniifon3 {
+  align-self: stretch; /* Заставляет элемент растянуться на всю доступную ширину родительского контейнера */
+  position: relative;
+}
+.uptext1 {
+  display: flex; /* Делает контейнер flex-контейнером */
+  justify-content: center; /* Центрирует содержимое по горизонтали */
+  align-items: center; /* Центрирует содержимое по вертикали */
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+  font-family: 'Montserrat', bold;
+}
+.uptext1{
+  margin-top: -60px;
+
+}
+.scammer-title,
+.texttopscammers,
+.zadniifon {
+  align-self: stretch;
+  position: relative;
+}
+.zadniifon {
+  height: 700px;
+  border-radius: 18.33px 18.33px 0 0;
+  background-color: var(--color-black);
+  border-top: 1px solid var(--color-mediumseagreen);
+  box-sizing: border-box;
+  display: none;
+}
+.texttopscammers {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 1;
+  top: 25px;
+}
+.backinfousersinleaders {
+  height: 80px;
+  width: 400px;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--color-gray-200);
+  display: none;
+  max-width: 100%;
+}
+.avausersinleaders {
+  align-self: stretch;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 100%;
+  background-color: var(--color-gainsboro);
+  z-index: 1;
+}
+.kolvoscamsinleaders,
+.usernameinleaders,
+.valutinleaders {
+  position: relative;
+  display: inline-block;
+  min-width: 103px;
+  z-index: 1;
+}
+.usernameinleaders{
+  text-align: left;
+}
+.kolvoscamsinleaders,
+.valutinleaders {
+  min-width: 76px;
+}
+.valutinleaders {
+  color: var(--color-mediumseagreen);
+  min-width: 60px;
+}
+.top-scammer-stats {
+  flex-direction: row;
+  gap: var(--gap-8xs);
+}
+.top-scammer-avatar,
+.top-scammer-name,
+.top-scammer-stats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.top-scammer-name {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.top-scammer-avatar {
+  height: 50px;
+  width: 211px;
+  flex-direction: row;
+  gap: var(--gap-xl);
+}
+.mestovtopeusers {
+  text-align: right;
+  position: relative;
+  display: inline-block;
+  min-width: 69px;
+  z-index: 1;
+}
+.top-scammer-rank,
+.userinfoinleaders {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) 0 0;
+}
+.userinfoinleaders {
+  flex: 1;
+  border-radius: var(--br-base);
+  background-color: #1A1A1A;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-mini) var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.top-scammer-info,
+.top-scammers-header {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.top-scammer-info {
+  flex-direction: row;
+  padding: 0 25px;
+  box-sizing: border-box;
+  font-size: var(--font-size-base);
+}
+.top-scammers-header {
+  flex-direction: column;
+  gap: 51px;
+}
+.kolvoholders {
+  position: relative;
+  display: inline-block;
+  min-width: 119px;
+  z-index: 1;
+}
+.size-photo{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 100%;
+}
+.avausersinleadersdown {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+}
+.usernameinleadersdown {
+  position: relative;
+  display: inline-block;
+  min-width: 103px;
+}
+.kolvoscamsinleadersdown,
+.valutinleadersdown {
+  position: relative;
+  display: inline-block;
+  min-width: 76px;
+}
+.valutinleadersdown {
+  color: var(--color-mediumseagreen);
+  min-width: 60px;
+}
+.usernames-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-112xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  min-width: 177px;
+}
+.mestovtopeusersdown {
+  position: relative;
+  display: inline-block;
+  min-width: 18px;
+}
+.userinfodown {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-xl);
+  flex-shrink: 0;
+}
+.kolvoscamsinleadersdown5,
+.valutinleadersdown5 {
+  align-self: stretch;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kolvoscamsinleadersdown5 {
+  flex: 1;
+}
+.valutinleadersdown5 {
+  width: 60px;
+  color: var(--color-mediumseagreen);
+}
+.kolvoscamsinleadersdown-parent2 {
+  align-self: stretch;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.mestovtopeusersdown-wrapper2 {
+  width: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) 0 0;
+  box-sizing: border-box;
+}
+
+.kolvoscamsinleadersdown-parent3 {
+  align-self: stretch;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+  flex-shrink: 0;
+}
+.leadersgameusers,
+.usernameinleadersdown-parent2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.usernameinleadersdown-parent2 {
+  height: 41px;
+  flex: 1;
+  padding: 0 var(--padding-112xl) 21px 0;
+  gap: var(--gap-3xs);
+  min-width: 177px;
+}
+.leadersgameusers {
+  align-self: stretch;
+  height: 357px;
+  width: 390px;
+  border-radius: var(--br-base);
+  overflow-y: overlay; /* Скроллбар будет накладываться на содержимое, не влияя на ширину */
+  flex-shrink: 0;
+  padding: 0 0 27px 0;
+  gap: var(--gap-xl);
+  z-index: 1;
+  position: relative;
+  padding-right: 6px; /* Оставляем небольшой отступ для визуального смещения */
+}
+
+/* Кастомизация скроллбара */
+.leadersgameusers::-webkit-scrollbar {
+  width: 3px; /* Ширина скроллбара */
+  background-color: transparent; /* Сделать фон скроллбара прозрачным */
+}
+
+/* Стиль скролл-индикатора */
+.leadersgameusers::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a; /* Цвет ползунка скроллбара */
+  border-radius: 8px; /* Закругление краев ползунка */
+}
+
+.leadersgameusers::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Цвет ползунка при наведении */
+}
+
+.leaderboard-container,
+.leaderboard-header,
+.top-scammers-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.leaderboard-header {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+.leaderboard-container,
+.top-scammers-container {
+  align-self: stretch;
+}
+.leaderboard-container {
+  flex-direction: row;
+  padding: 0 var(--padding-16xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-base);
+}
+.top-scammers-container {
+  flex-direction: column;
+  gap: 30px;
+}
+.frame-parent2,
+.frame-wrapper3 {
+  padding-top: 10px;
+  justify-content: center; /* Центрирует элементы внутри контейнера по горизонтали */
+  align-items: center; /* Центрирует элементы внутри контейнера по вертикали */
+  max-width: 450px;
+}
+.frame-parent2 {
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+}
+.frame-wrapper3 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.homebuttonimage-icon2 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+.homebuttonimage-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-41xl);
+}
+.hometext {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  display: flex; /* Добавлено для использования flexbox */
+  justify-content: center; /* Центрирование по горизонтали */
+  text-align: center; /* Центрирование текста по горизонтали */
+}
+.hometext {
+  font-family: 'Montserrat', bold;
+}
+
+.homebutton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  min-width: 112px;
+}
+.button-leader {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  min-width: 112px;
+  color: white;
+}
+.frendsbuttonimage-icon2 {
+  height: 30px;
+  width: 40px;
+  position: relative;
+}
+.frendsbuttonimage-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-36xl);
+}
+.frendsbutton2 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+  min-width: 112px;
+}
+.frendsbutton2,
+.mainbuttons2,
+.newscamfrendsframe,
+.top-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mainbuttons1 {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  z-index: 1;
+  font-size: var(--font-size-lg-3);
+  color: var(--color-gray-200);
+}
+.newscamfrendsframe,
+.top-container {
+  background-color: var(--color-black);
+  max-width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: var(--font-montserrat);
+}
+.top-container {
+  position: absolute;
+  align-self: stretch;
+  border-radius: 16px 16px 0 0;
+  border-top: 1px solid #21D589; /* Зелёная граница сверху */
+  gap: var(--gap-xl);
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+}
+.mainbuttons1,
+.newscamfrendsframe {
+  position: fixed;
+}
+
+.bigbutton {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  position: relative;
+  height: 50px;
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  transform-origin: center center; /* Устанавливаем точку масштабирования по центру */
+}
+
+.mainbuttons1 {
+  position: fixed; /* Используем fixed для фиксированного положения */
+  height: 100px;
+  background-color: black;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  bottom: 0; /* Отступ от нижнего края экрана */
+  left: 50%; /* Центрирование контейнера по горизонтали */
+  transform: translateX(-50%); /* Корректировка для полного центрирования */
+  z-index: 1;
+  font-size: var(--font-size-lg-3);
+  color: var(--color-gray-200);
+}
+
+
+.back-bigbutton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 80px; /* Расстояние от нижнего края экрана */
+  height: 70px;
+  width: 450px;
+  left: 50%;
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  z-index: 2; /* Порядок отображения */
+}
+
+
+
+.main{
+  position: absolute;
+  width: 450px;
+}
+
+.root {
+  align-items: center; /* Центрирование по горизонтали */
+  width: 100%;
+  height: 100vh; /* Высота 100% от высоты экрана */
+  position: relative;
+  background: black;
+  background-size: cover; /* Фон покрывает всю область элемента */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl) var(--padding-11xl) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-21xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
